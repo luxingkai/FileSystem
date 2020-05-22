@@ -14,6 +14,7 @@
 		112BA5C42477DD9600CA4771 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 112BA5C32477DD9600CA4771 /* main.m */; };
 		112BA5CE2477DD9600CA4771 /* FileSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 112BA5CD2477DD9600CA4771 /* FileSystemTests.m */; };
 		112BA5D92477DD9600CA4771 /* FileSystemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 112BA5D82477DD9600CA4771 /* FileSystemUITests.m */; };
+		112BA5E82478198400CA4771 /* NSFileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112BA5E72478198400CA4771 /* NSFileManagerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		112BA5D42477DD9600CA4771 /* FileSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		112BA5D82477DD9600CA4771 /* FileSystemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileSystemUITests.m; sourceTree = "<group>"; };
 		112BA5DA2477DD9600CA4771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112BA5E62478198400CA4771 /* NSFileManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSFileManagerViewController.h; sourceTree = "<group>"; };
+		112BA5E72478198400CA4771 /* NSFileManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				112BA5B22477DD9400CA4771 /* AppDelegate.m */,
 				112BA5B72477DD9400CA4771 /* ViewController.h */,
 				112BA5B82477DD9400CA4771 /* ViewController.m */,
+				112BA5E62478198400CA4771 /* NSFileManagerViewController.h */,
+				112BA5E72478198400CA4771 /* NSFileManagerViewController.m */,
 				112BA5BD2477DD9600CA4771 /* Assets.xcassets */,
 				112BA5BF2477DD9600CA4771 /* LaunchScreen.storyboard */,
 				112BA5C22477DD9600CA4771 /* Info.plist */,
@@ -261,6 +266,7 @@
 				112BA5B92477DD9400CA4771 /* ViewController.m in Sources */,
 				112BA5B32477DD9400CA4771 /* AppDelegate.m in Sources */,
 				112BA5C42477DD9600CA4771 /* main.m in Sources */,
+				112BA5E82478198400CA4771 /* NSFileManagerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

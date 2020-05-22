@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "NSFileManagerViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -20,7 +22,8 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    ViewController *vc = [ViewController new];
+//    ViewController *vc = [ViewController new];
+    NSFileManagerViewController *vc = [NSFileManagerViewController new];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     
