@@ -8,11 +8,14 @@
 
 #import "NSFileManagerViewController.h"
 
-@interface NSFileManagerViewController ()
+@interface NSFileManagerViewController ()<NSCoding>
 
 @end
 
-@implementation NSFileManagerViewController
+@implementation NSFileManagerViewController {
+    
+    NSFileManager *_fileManager;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,7 +24,22 @@
 
     //thread safely (Threading Considerations)
     
-    [NSFileManager filemanager]
+    //Creating File Manager
+//    _fileManager = [NSFileManager defaultManager];
+    _fileManager = [[NSFileManager alloc] init];
+    
+    //Accessing User Directories
+    NSString *homeDirectory = NSHomeDirectory();
+    NSLog(@"homeDirectory %@",homeDirectory);
+    NSString *userName = NSUserName();
+    NSLog(@"userName %@",userName);
+    NSString *fullUserName = NSFullUserName();
+    NSLog(@"fullUserName %@",fullUserName);
+    NSString *homeDirectoryForUser = NSHomeDirectoryForUser(userName);
+    NSLog(@"homeDirectoryForUser %@",homeDirectoryForUser);
+    
+    
+    
     
     
     // Do any additional setup after loading the view.
