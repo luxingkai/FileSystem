@@ -1,8 +1,8 @@
 //
-//  NSFileManagerViewController.h
+//  SharedFiles.h
 //  FileSystem
 //
-//  Created by tigerfly on 2020/5/22.
+//  Created by tiger fly on 2020/11/10.
 //  Copyright © 2020 tigerfly. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSFileManagerViewController : UIViewController
+@interface SharedFiles : UIViewController
 
 @end
 

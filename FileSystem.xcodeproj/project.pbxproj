@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		112BA5B32477DD9400CA4771 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 112BA5B22477DD9400CA4771 /* AppDelegate.m */; };
-		112BA5B92477DD9400CA4771 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112BA5B82477DD9400CA4771 /* ViewController.m */; };
 		112BA5BE2477DD9600CA4771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112BA5BD2477DD9600CA4771 /* Assets.xcassets */; };
 		112BA5C12477DD9600CA4771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112BA5BF2477DD9600CA4771 /* LaunchScreen.storyboard */; };
 		112BA5C42477DD9600CA4771 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 112BA5C32477DD9600CA4771 /* main.m */; };
 		112BA5CE2477DD9600CA4771 /* FileSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 112BA5CD2477DD9600CA4771 /* FileSystemTests.m */; };
 		112BA5D92477DD9600CA4771 /* FileSystemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 112BA5D82477DD9600CA4771 /* FileSystemUITests.m */; };
-		112BA5E82478198400CA4771 /* NSFileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112BA5E72478198400CA4771 /* NSFileManagerViewController.m */; };
+		118EAE92255AB1500010B1B3 /* FileSystemOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 118EAE91255AB1500010B1B3 /* FileSystemOperations.m */; };
+		118EAE95255AB1730010B1B3 /* ManagedFileAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 118EAE94255AB1730010B1B3 /* ManagedFileAccess.m */; };
+		118EAE98255AB1B30010B1B3 /* SharedFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 118EAE97255AB1B30010B1B3 /* SharedFiles.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,6 @@
 		112BA5AE2477DD9400CA4771 /* FileSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		112BA5B12477DD9400CA4771 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		112BA5B22477DD9400CA4771 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		112BA5B72477DD9400CA4771 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		112BA5B82477DD9400CA4771 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		112BA5BD2477DD9600CA4771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		112BA5C02477DD9600CA4771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		112BA5C22477DD9600CA4771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,8 +49,12 @@
 		112BA5D42477DD9600CA4771 /* FileSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		112BA5D82477DD9600CA4771 /* FileSystemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileSystemUITests.m; sourceTree = "<group>"; };
 		112BA5DA2477DD9600CA4771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		112BA5E62478198400CA4771 /* NSFileManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSFileManagerViewController.h; sourceTree = "<group>"; };
-		112BA5E72478198400CA4771 /* NSFileManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerViewController.m; sourceTree = "<group>"; };
+		118EAE90255AB1500010B1B3 /* FileSystemOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileSystemOperations.h; sourceTree = "<group>"; };
+		118EAE91255AB1500010B1B3 /* FileSystemOperations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileSystemOperations.m; sourceTree = "<group>"; };
+		118EAE93255AB1730010B1B3 /* ManagedFileAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagedFileAccess.h; sourceTree = "<group>"; };
+		118EAE94255AB1730010B1B3 /* ManagedFileAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagedFileAccess.m; sourceTree = "<group>"; };
+		118EAE96255AB1B30010B1B3 /* SharedFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedFiles.h; sourceTree = "<group>"; };
+		118EAE97255AB1B30010B1B3 /* SharedFiles.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedFiles.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +107,12 @@
 			children = (
 				112BA5B12477DD9400CA4771 /* AppDelegate.h */,
 				112BA5B22477DD9400CA4771 /* AppDelegate.m */,
-				112BA5B72477DD9400CA4771 /* ViewController.h */,
-				112BA5B82477DD9400CA4771 /* ViewController.m */,
-				112BA5E62478198400CA4771 /* NSFileManagerViewController.h */,
-				112BA5E72478198400CA4771 /* NSFileManagerViewController.m */,
+				118EAE90255AB1500010B1B3 /* FileSystemOperations.h */,
+				118EAE91255AB1500010B1B3 /* FileSystemOperations.m */,
+				118EAE93255AB1730010B1B3 /* ManagedFileAccess.h */,
+				118EAE94255AB1730010B1B3 /* ManagedFileAccess.m */,
+				118EAE96255AB1B30010B1B3 /* SharedFiles.h */,
+				118EAE97255AB1B30010B1B3 /* SharedFiles.m */,
 				112BA5BD2477DD9600CA4771 /* Assets.xcassets */,
 				112BA5BF2477DD9600CA4771 /* LaunchScreen.storyboard */,
 				112BA5C22477DD9600CA4771 /* Info.plist */,
@@ -263,10 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				112BA5B92477DD9400CA4771 /* ViewController.m in Sources */,
 				112BA5B32477DD9400CA4771 /* AppDelegate.m in Sources */,
+				118EAE95255AB1730010B1B3 /* ManagedFileAccess.m in Sources */,
+				118EAE98255AB1B30010B1B3 /* SharedFiles.m in Sources */,
 				112BA5C42477DD9600CA4771 /* main.m in Sources */,
-				112BA5E82478198400CA4771 /* NSFileManagerViewController.m in Sources */,
+				118EAE92255AB1500010B1B3 /* FileSystemOperations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +435,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FileSystem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,6 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FileSystem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

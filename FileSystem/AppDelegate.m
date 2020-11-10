@@ -7,9 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
-#import "NSFileManagerViewController.h"
-
+#import "FileSystemOperations.h"
+#import "ManagedFileAccess.h"
+#import "SharedFiles.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +23,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 //    ViewController *vc = [ViewController new];
-    NSFileManagerViewController *vc = [NSFileManagerViewController new];
+    FileSystemOperations *vc = [FileSystemOperations new];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     
